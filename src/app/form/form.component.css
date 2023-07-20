@@ -1,0 +1,84 @@
+.form-container {
+    width: 100%;
+    
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    gap: 20px;
+
+    /* background-color: bisque; */
+}
+
+/* FORM */
+.form-div{
+    /* width: 100%; */
+
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    gap: 40px;
+
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+#form-title{
+    width: 100%;
+    font-size: var(--font-xlarge);
+    position: relative;
+}
+
+#form-title::after{
+    content: '';
+
+    width: 100%;
+
+    position: absolute;
+    bottom: -15px;
+
+    /* border-bottom: 2px solid var(--main-bg-color); */
+    border-bottom: 2px solid black;
+}
+
+.form-content {
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 22px;
+
+    font-size: var(--font-large);
+
+}
+
+.form-content-notas {
+    gap: 20px;
+}
+
+
+.form-content-div {
+
+    justify-content: flex-start;
+
+    gap: 5px;
+}
+
+.form-content>div>input {
+    font-size: var(--font-medium);
+}
+
+.add-student-btn {
+    cursor: pointer;
+
+    height: 100%;
+
+    padding: 12px;
+
+    gap: 8px;
+    
+    border: 1px solid white;
+    border-radius: 8px;
+
+    font-size: var(--font-medium);
+    background-color: var(--secundary-color);
+}
+
+.add-student-btn:hover {
+    background-color: var(--primary-hover-color);
+}

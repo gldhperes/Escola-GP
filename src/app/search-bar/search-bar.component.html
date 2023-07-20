@@ -1,0 +1,18 @@
+<section class="flex-row search-bar-section">
+
+    <form class="search-form flex-row" (ngSubmit)="pesquisar()">
+
+        <div class="flex-row search-div" >
+
+            <label class="search-label" for="nomeAluno">Pesquisar Aluno</label>
+
+            <input class="search-input" type="text" name="nomeAluno" [(ngModel)]="nomeAluno" placeholder="Nome do Aluno">
+    
+            <button type="submit" class="flex-col search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+    </form>
+
+</section>

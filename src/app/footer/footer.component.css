@@ -1,0 +1,11 @@
+#footer {
+    width: 100%;
+
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    background-color: black;
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}

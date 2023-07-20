@@ -1,0 +1,67 @@
+<section class="flex-col student-list-section">
+    <app-search-bar style="width: 100%;"/>
+
+    <div class="flex-col student-list">
+
+        <div class="flex-row student-row student-row-header">
+            <h3 class="flex-row student-name">Nome do Aluno</h3>
+
+            <div class="flex-row student-nota-div">
+                <p class="flex-row student-nota">Nota 1</p>
+                <p class="flex-row student-nota">Nota 2</p>
+                <p class="flex-row student-nota">Média</p>
+            </div>
+
+
+            <p class="flex-row student-situation">Situação</p>
+        </div>
+
+
+        <div class="flex-row student-row" *ngFor="let student of students"
+            [ngClass]="{'aprovado-div': student.aprovado == 'Aprovado', 'reprovado-div': student.aprovado == 'Reprovado'}">
+
+            <h3 class="flex-row student-name">{{ student.nome }}</h3>
+
+            <div class="flex-row student-nota-div">
+
+                <div class="flex-row student-nota">
+                    <p>N1:</p>
+                    <p style="font-weight: bold;"> {{ student.nota1 }}</p>
+                </div>
+
+                <div class="flex-row student-nota">
+                    <p>N2:</p>
+                    <p style="font-weight: bold;"> {{ student.nota2 }}</p>
+                </div>
+
+                <div class="flex-row student-nota">
+                    <p>ME:</p>
+                    <p style="font-weight: bold;">{{ (student.nota1 + student.nota2) / 2 }}</p>
+                </div>
+
+            </div>
+
+            <p class="flex-row student-situation"
+                [ngClass]="{'aprovado': student.aprovado == 'Aprovado', 'reprovado': student.aprovado == 'Reprovado'}">
+
+                {{ student.aprovado }}
+            </p>
+
+            <div class="flex-row student-button-div">
+
+                <button id="edit-button" class="student-button" title="Editar" (click)="editStudent(student.nome)">
+                    <i class="fa-solid fa-user-pen"></i>
+                </button>
+
+                <button id="remove-button" type="button" class="student-button" (click)="removeStudent(student.nome)"
+                    title="Remover">
+                    <i class="fa-solid fa-user-xmark"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

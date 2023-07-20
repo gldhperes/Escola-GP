@@ -1,0 +1,106 @@
+/* STUDENT LIST */
+.student-list-section {
+    width: 100%;
+
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    gap: 30px;
+
+    font-size: var(--font-medium);
+}
+
+.student-list {
+    padding: 25px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.student-row-header {
+    background-color: var(--secundary-color);
+}
+
+.student-row {
+    padding: 5px 15px;
+
+    justify-content: flex-start;
+    gap: 15px;
+
+    border: 1px solid var(--secundary-color);
+    border-radius: 8px;    
+}
+
+.student-name {
+    width: var(--student-name);
+    justify-content: flex-start;
+}
+
+/* Student Nota */
+
+.student-nota-div{
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.student-nota {
+    width: var(--studend-nota);
+    gap: 5px;
+}
+
+.student-situation {
+    width: 100px;
+    font-weight: bold;
+
+}
+
+
+/* APROVADO - REPROVADO */
+
+.aprovado {
+    color: darkgreen !important;
+}
+
+.aprovado-div {
+    background-color: lightgreen !important;
+}
+
+.reprovado {
+    color: darkred !important;
+}
+
+.reprovado-div {
+    background-color: lightcoral !important;
+}
+
+
+/* BOTOES */
+.student-button-div{
+    gap: 8px;
+}
+
+.student-button {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background-color: var(--secundary-color);
+}
+
+.student-button>i {
+    color: black;
+}
+
+.student-button:hover {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,45 @@
+<div class="flex-col form-container">
+
+    <div class="flex-col form-div">
+
+        <h1 id="form-title" class="flex-row">Inserir notas dos Alunos</h1>
+
+        <form class="flex-row form-content">
+
+            <div class="flex-row form-content-div">
+                <label for="nome">Nome do Aluno:</label>
+
+                <input class="default-form" type="text" id="nome" name="nome" [(ngModel)]="nome"
+                    placeholder="Nome do Aluno" required>
+            </div>
+
+            <section class="flex-row form-content-notas">
+
+                <div class="flex-row form-content-div">
+                    <label for="nota1">Nota 1:</label>
+
+                    <input class="default-form" type="number" min="0" max="10" id="nota1" name="nota1"
+                        [(ngModel)]="nota1" placeholder="0" required>
+                </div>
+
+                <div class="flex-row form-content-div">
+                    <label for="nota2">Nota 2:</label>
+
+                    <input class="default-form" type="number" min="0" max="10" id="nota2" name="nota2"
+                        [(ngModel)]="nota2" placeholder="0" required>
+                </div>
+
+            </section>
+
+
+            <button id="form-add-btn" class="flex-row add-student-btn" type="button" (click)="addStudent()" title="Adicionar">
+                <i class="fa-solid fa-user-plus"></i>
+                <p>Adicionar</p>
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<!-- <app-search-bar /> -->
+<app-students-list />

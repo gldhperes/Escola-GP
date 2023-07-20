@@ -1,0 +1,27 @@
+#header{
+    width: 100%;
+
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    justify-content: space-between;
+
+    font-size: var(--font-large);
+
+    background-color: var(--secundary-color);
+}
+
+.hamburguer_menu{
+    gap: 40px;
+}
+
+.header_icon{
+    cursor: pointer;
+
+    color: black;
+
+    font-size: var(--font-xlarge);
+}
+
+.header_icon:hover{
+    color: var(--primary-hover-color);
+}

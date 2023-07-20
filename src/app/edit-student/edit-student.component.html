@@ -1,0 +1,49 @@
+<section class="flex-col edit-student-container">
+
+    <h2 id="edit-form-title" class="flex-row">Editar Aluno</h2>
+
+    <form class="flex-row edit-form-content">
+
+        <div class="flex-row edit-student-name-div ">
+
+            <div class="flex-row gap5">
+                <label for="nome">Nome do Aluno:</label>
+                <input class="default-form" type="text" id="nome" name="nome" [(ngModel)]="nome" required>
+            </div>
+
+        </div>
+
+        <div class="flex-row edit-student-nota-div ">
+
+            <div class="flex-row gap5">
+                <label for="nota1">Nota 1:</label>
+                <input class="default-form" type="number" min="0" max="10" id="nota1" name="nota1" [(ngModel)]="nota1"
+                    required>
+            </div>
+
+            <div class="flex-row gap5">
+                <label for="nota2">Nota 2:</label>
+                <input class="default-form" type="number" min="0" max="10" id="nota2" name="nota2" [(ngModel)]="nota2"
+                    required>
+            </div>
+
+        </div>
+
+        <div class="flex-row edit-student-button-div">
+
+            <button class="edit-student-btn" type="button" id="confirm-button" (click)="confirmEdition()"
+                title="Confirmar edição">
+                <p>Confirmar</p>
+                <i class="fa-solid fa-user-check"></i>
+            </button>
+
+            <button class="edit-student-btn" type="button" id="remove-button" (click)="confirmEdition()"
+                title="Cancelar edição">
+                <p>Cancelar</p>
+                <i class="fa-solid fa-user-xmark"></i>
+            </button>
+
+        </div>
+    </form>
+
+</section>

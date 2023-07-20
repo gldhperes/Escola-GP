@@ -1,1 +1,206 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --font-small: small;
+    --font-medium: medium;
+    --font-large: large;
+    --font-xlarge: x-large;
+    --font-xxlarge: xx-large;
+
+    --student-name: 350px;
+    --studend-nota: 80px;
+
+    --main-horizontal-padding: 70px;
+    --main-vertital-padding: 30px;
+
+    --primary-color: #ddd;
+    --secundary-color: #778899;
+    --primary-hover-color: #99AABB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary-color);
+}
+
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-form {
+    padding: 8px;
+    padding-left: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    /* background-color: var(--dark-blue); */
+}
+
+/* ====================================== */
+/* MEDIAS */
+/* ====================================== */
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --font-small: x-small !important;
+        --font-medium: small !important;
+        --font-large: medium !important;
+        --font-xlarge: large !important;
+        --font-xxlarge: x-large !important;
+
+        --student-name: 200px !important;
+        --studend-nota: 40px !important;
+
+        --main-horizontal-padding: 50px !important;
+        --main-vertital-padding: 20px !important;
+    }
+
+
+    /* FORM */
+    .form-content-div {
+        flex-flow: row wrap !important;
+    }
+
+    #form-title {
+        font-size: large !important;
+    }
+
+    /* STUDENT LIST */
+
+    .student-list {
+        font-size: small !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    :root {
+        --main-horizontal-padding: 30px !important;
+        --main-vertital-padding: 10px !important;
+    }
+
+
+    /* FORM */
+    .form-content {
+        flex-flow: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    #form-add-btn{
+        width: 100%;
+    }
+
+
+
+    /* STUDENT LIST */
+
+    .student-row {
+        padding: 10px 15px !important;
+
+        flex-flow: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        text-align: center !important;
+    }
+
+    .student-name {
+        justify-content: center !important;
+    }
+
+    .student-nota-div {
+        width: 100% !important;
+    }
+
+
+    /* EDIT STUDENTS */
+    .gap5{
+        flex-flow: row wrap !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* HEADER */
+    #user{
+        display: none;
+    }
+
+    /* SEARCH BAR */
+
+    .search-bar-section {
+        width: 100% !important;
+    }
+
+    .search-form {
+        width: 100% !important;
+    }
+
+    .search-div {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 1000px !important;
+
+        padding: 10px 0px !important;
+        padding-bottom: 0px !important;
+
+        flex-flow: column !important;
+        gap: 15px !important;
+    }
+
+    .search-label {
+        width: 100% !important;
+
+        padding-right: 0px !important;
+        padding: 0px !important;
+
+        text-align: center;
+
+        border-right: none !important;
+        border: none !important;
+    }
+
+    .search-input {
+        width: 100% !important;
+
+        padding: 12px 8px !important;
+    }
+
+    .search-button {
+        --btnDim: 100% !important;
+        padding: 10px 0px !important;
+
+        border-radius: 0px !important;
+        border-bottom-left-radius: var(--btnBorderRadius) !important;
+        border-bottom-right-radius: var(--btnBorderRadius) !important;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .student-list {
+        padding: 15px 8px !important;
+    }
+}

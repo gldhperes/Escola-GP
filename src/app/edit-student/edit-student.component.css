@@ -1,0 +1,83 @@
+/* GERAL */
+.gap5{
+    gap: 5px;
+}
+
+
+.edit-student-container {
+    padding: var(--main-vertital-padding) var(--main-horizontal-padding);
+
+    gap: 30px;
+}
+
+#edit-form-title {
+    width: 100%;
+    font-size: var(--font-xlarge);
+}
+
+.edit-form-content {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    flex-flow: row wrap;
+    gap: 20px;
+
+    border: 2px solid var(--secundary-color);
+    border-radius: 8px;
+
+    background-color: #aaa;
+}
+
+
+.gap5 > input {
+    font-size: var(--font-medium);
+}
+
+
+/* NOTAS */
+.edit-student-nota-div{
+    gap: 20px;
+}
+
+.edit-form-content>div {
+    gap: 5px;
+}
+
+
+
+/* BOTOES */
+.edit-student-button-div{
+    gap: 20px;
+}
+
+.edit-student-btn {
+
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border: 1px solid var(--secundary-color);
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: var(--font-medium);
+    color: black;
+
+    background-color: none;
+}
+
+.edit-student-btn:hover {
+    background-color: var(--secundary-color) !important;
+}
+
+#confirm-button {
+    background-color: lightgreen;
+}
+
+#remove-button {
+    background-color: red;
+}
