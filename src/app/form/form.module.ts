@@ -19,7 +19,6 @@ import { StudentsListComponent } from '../students-list/students-list.component'
   ],
  
   providers: [
-   
   ],
   
   bootstrap: []

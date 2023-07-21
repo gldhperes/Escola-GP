@@ -51,7 +51,6 @@ export class StudentsListComponent {
   }
 
   removeStudent(nomeAluno: string): void {
-    console.log(nomeAluno!);
 
     this.studentService.removeStudent(nomeAluno);
     this.loadStudents();

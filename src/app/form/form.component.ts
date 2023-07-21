@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { IStudent } from '../students';
 import { StudentService } from '../student.service';
 
@@ -21,10 +21,8 @@ export class FormComponent {
     private studentService: StudentService
   ) { }
 
-
+  
   addStudent(): void {
-    console.log(this.nome, this.nota1, this.nota2);
-
 
     if (this.nome && this.nota1 && this.nota2) {
 
@@ -35,8 +33,7 @@ export class FormComponent {
         aprovado: "Reprovado"
       }
 
-
-      console.log(this.student);
+      // console.log(this.student);
 
       this.studentService.addStudent(this.student);
       this.studentService.studentAdded.emit(this.student);
@@ -46,12 +43,6 @@ export class FormComponent {
       this.nota2 = undefined;
 
     }
-
-
-
   }
-
-   
-
 
 }
